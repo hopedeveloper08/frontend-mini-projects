@@ -40,7 +40,7 @@ function SpongebobLoginForm() {
 
   return (
     <>
-      <main className="w-screen h-screen p-10 bg-yellow-50 flex justify-center items-center">
+      <main className="w-full min-h-screen p-10 bg-yellow-50 flex justify-center items-center">
         <div className="w-80 h-150 bg-[#fbf468] rounded-4xl px-12 py-8 flex flex-col justify-between items-center shadow-md shadow-zinc-700 *:w-full">
           <div className="flex justify-center relative">
             <img className="rounded" src="/images/spongebob-login-form/bobno.png" alt="spongebob" />

@@ -2,7 +2,7 @@ import { themeChange } from "../../../scripts/themeHandler";
 
 function Theme() {
   return (
-    <label className="swap swap-rotate py-2 px-5">
+    <label className="swap swap-rotate">
       <input
         id="theme-toggle"
         type="checkbox"
@@ -10,7 +10,7 @@ function Theme() {
       />
       {/* sun icon */}
       <svg
-        className="swap-on h-10 w-10 fill-current"
+        className="swap-on size-8 lg:size-10 fill-current"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
@@ -18,7 +18,7 @@ function Theme() {
       </svg>
       {/* moon icon */}
       <svg
-        className="swap-off h-10 w-10 fill-current"
+        className="swap-off size-8 lg:size-10 fill-current"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >

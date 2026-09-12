@@ -8,8 +8,8 @@ import Weather from "./apps/weather/Weather";
 import ToDo from "./apps/to-do/ToDo";
 
 import { initializeTheme } from "./scripts/themeHandler";
-import Navbar from "./apps/main-page/Components/Navbar";
-import NotFound404 from "./apps/NotFound/NotFound404";
+import Navbar from "./apps/navbar/Navbar";
+import NotFound404 from "./apps/not-found/NotFound404";
 
 function App() {
   useEffect(() => {
@@ -17,13 +17,13 @@ function App() {
   }, []);
 
   return (
-    <main className="w-screen h-screen bg-base-300 relative">
+    <main className="w-screen h-screen bg-base-300">
       <Navbar />
       <Routes>
-        <Route path="/" Component={Main} />
+        <Route path="/main" Component={Main} />
         <Route path="/spongebob-login-form" Component={SpongebobLoginForm} />
         <Route path="/weather" Component={Weather} />
-        <Route path="/todo" Component={ToDo} />
+        <Route path="/" Component={ToDo} />
         <Route path="/*" Component={NotFound404} />
       </Routes>
     </main>
