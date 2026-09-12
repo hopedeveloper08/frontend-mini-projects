@@ -1,5 +1,8 @@
 @import "tailwindcss";
+@plugin "daisyui";
 @import 'vazirmatn/Vazirmatn-font-face.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 body {
     font-family: Vazirmatn, sans-serif;
