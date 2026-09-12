@@ -22,16 +22,16 @@ function Search({ city, onCityChange, onSearch }: SearchProps) {
       <input
         type="text"
         className="
-          
           flex-1
           h-12
           rounded-xl
           border border-white/20
+          shadow-sm
           bg-white/20
           px-4
-          text-sm
-          text-white
-          placeholder:text-white/70
+          text-sm md:text-base
+          text-zinc-900
+          placeholder:text-zinc-700
           outline-none
           focus:border-white/50
           focus:bg-white/25
@@ -46,7 +46,7 @@ function Search({ city, onCityChange, onSearch }: SearchProps) {
         type="submit"
         className="
           btn
-          btn-dark
+          text-sm md:text-base
           h-12
           px-5
           rounded-xl

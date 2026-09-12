@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 import fetchWeatherData from "./api";
 
@@ -21,6 +21,8 @@ function Weather() {
   const [city, setCity] = useState("");
 
   async function getWeather() {
+    if (!city) throw new Error()
+
     const { temp, rain, cloudCover, cityName } = await fetchWeatherData(city);
 
     setTitle(cityName);
@@ -41,7 +43,7 @@ function Weather() {
 
   return (
     <main
-      className="min-h-screen bg-[url(/images/weather/bg.jpg)] bg-cover bg-center flex items-center justify-center relative px-4 py-8"
+      className="w-screen h-screen bg-[url(/images/weather/bg.jpg)] bg-cover bg-center flex items-center justify-center relative px-4 py-8"
       dir="rtl"
     >
       {/* Overlay */}

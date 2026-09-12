@@ -47,12 +47,12 @@ function SpongebobLoginForm() {
             <img id="left-eye" className="absolute size-8 top-17 right-12 duration-500" src="/images/spongebob-login-form/eye.png" alt="left-eye" />
             <img id="right-eye" className="absolute size-8 top-17 left-12 duration-500" src="/images/spongebob-login-form/eye.png" alt="right-eye" />
           </div>
-          <div className="flex flex-col justify-around gap-4">
+          <div className="flex flex-col justify-around gap-4" dir='ltr'>
             <input type="text" onChange={handleChange} className="border border-zinc-600 text-zinc-600 rounded-sm px-3 py-2" placeholder="Username" onFocus={onFocusUsername} onBlur={onBlurHandler} />
             <input type="password" className="border border-zinc-600 text-zinc-600 rounded-sm px-3 py-2" placeholder="Password" onFocus={onFocusPassword} onBlur={onBlurHandler} />
           </div>
           <div>
-            <button className="w-full py-2 btn bg-blue-500 border-blue-500 hover:bg-blue-400 rounded-md text-white text-lg">Login</button>
+            <button className="w-full py-2 btn bg-blue-500 border-blue-500 hover:bg-blue-400 rounded-md text-white text-lg shadow-sm shadow-blue-700">Login</button>
           </div>
         </div>
       </main>
