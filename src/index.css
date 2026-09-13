@@ -3,9 +3,7 @@
 @import "vazirmatn/Vazirmatn-font-face.css";
 
 @plugin "daisyui" {
-  themes:
-    light --default,
-    dark --prefersdark;
+  themes: hope-light, dark;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -50,7 +48,7 @@ body {
    ───────────────────────────────────────────── */
 
 @plugin "daisyui/theme" {
-  name: "light";
+  name: "hope-light";
   default: true;
   color-scheme: light;
 

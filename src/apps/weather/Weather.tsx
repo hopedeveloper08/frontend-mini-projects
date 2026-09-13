@@ -43,7 +43,7 @@ function Weather() {
 
   return (
     <main
-      className="w-full min-h-screen bg-[url(/images/weather/bg.jpg)] bg-cover bg-center flex items-center justify-center relative px-4 py-8"
+      className="w-full h-[85vh] lg:h-[93vh] bg-[url(/images/weather/bg.webp)] bg-cover bg-center flex items-center justify-center relative px-4 py-8"
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30" />

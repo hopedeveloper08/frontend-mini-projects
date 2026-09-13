@@ -3,11 +3,11 @@ function initializeTheme(): void {
   const savedTheme = localStorage.theme;
 
   const theme =
-    savedTheme === "dark" || savedTheme === "light"
+    savedTheme === "dark" || savedTheme === "hope-light"
       ? savedTheme
       : window.matchMedia("(prefers-color-scheme: dark)").matches
         ? "dark"
-        : "light";
+        : "hope-light";
 
   // Tailwind
   html.classList.toggle("dark", theme === "dark");
@@ -17,7 +17,7 @@ function initializeTheme(): void {
 }
 
 function themeChange(dark: boolean): void {
-  const theme = dark ? "dark" : "light";
+  const theme = dark ? "dark" : "hope-light";
   const html = document.documentElement;
 
   // ذخیره انتخاب کاربر

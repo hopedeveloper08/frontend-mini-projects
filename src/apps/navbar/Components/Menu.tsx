@@ -12,7 +12,7 @@ function Menu() {
     { id: 1, title: "صفحه اصلی", link: "/" },
     { id: 2, title: "فرم لاگین باب اسفنجی", link: "/spongebob-login-form" },
     { id: 3, title: "آب و هوا", link: "/weather" },
-    { id: 4, title: "مدیریت کارها", link: "/todo" },
+    { id: 4, title: "چک‌لسیت روزانه", link: "/todo" },
   ];
 
   return (

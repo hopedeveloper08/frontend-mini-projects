@@ -1,6 +1,17 @@
+import { useEffect } from "react";
 import { themeChange } from "../../../scripts/themeHandler";
 
 function Theme() {
+  useEffect(() => {
+    const toggle = document.getElementById(
+      "theme-toggle",
+    ) as HTMLInputElement | null;
+
+    if (toggle) {
+      toggle.checked = localStorage.getItem("theme") === "dark";
+    }
+  }, []);
+
   return (
     <label className="swap swap-rotate">
       <input

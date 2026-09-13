@@ -1,10 +1,29 @@
-import { Link } from "react-router";
+import { useEffect } from "react";
+import { useNavigate } from "react-router";
 
 function NotFound404() {
+  const navigate = useNavigate();
+
+  function goHome() {
+    navigate("/", {
+      replace: true,
+    });
+  }
+
+  function goBack() {
+    navigate(-1);
+  }
+
+  useEffect(() => {
+    setTimeout(() => {
+      goHome();
+    }, 5000);
+  }, []);
+
   return (
     <main
       dir="rtl"
-      className="min-h-screen bg-base-200 flex items-center justify-center p-6"
+      className="h-[85vh] lg:h-[90vh] bg-base-300 flex items-center justify-center p-6"
     >
       <div className="card bg-base-100 shadow-xl w-full max-w-lg">
         <div className="card-body items-center text-center py-12">
@@ -19,14 +38,11 @@ function NotFound404() {
           </p>
 
           <div className="card-actions mt-6">
-            <Link to="/" className="btn btn-primary">
+            <button onClick={goHome} className="btn btn-primary">
               🏠 صفحه اصلی
-            </Link>
+            </button>
 
-            <button
-              className="btn btn-outline"
-              onClick={() => window.history.back()}
-            >
+            <button className="btn btn-outline" onClick={goBack}>
               بازگشت
             </button>
           </div>
