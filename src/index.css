@@ -2,82 +2,69 @@
 
 @import "vazirmatn/Vazirmatn-font-face.css";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* =========================================================
+   DaisyUI
+   ========================================================= */
+
 @plugin "daisyui" {
   themes: hope-light, dark;
 }
 
-@custom-variant dark (&:where(.dark, .dark *));
-
-body {
-  font-family: Vazirmatn, sans-serif;
-  background: var(--color-base-100);
-  color: var(--color-base-content);
-}
-
-/* ─────────────────────────────────────────────
-   HOPE DEVELOPER — BRAND TOKENS
-   ───────────────────────────────────────────── */
-
-@theme {
-  /* Brand */
-  --color-hope-blue: #0060f0;
-  --color-hope-electric: #0090f0;
-  --color-hope-cyan: #00d0c0;
-  --color-hope-aqua: #00e0b0;
-
-  /* Dark */
-  --color-hope-navy: #050b18;
-  --color-hope-surface: #0b1220;
-
-  /* Light */
-  --color-hope-light: #f8fafc;
-  --color-hope-muted: #64748b;
-
-  /* Gradient */
-  --background-image-hope-gradient: linear-gradient(
-    135deg,
-    #0060f0 0%,
-    #0090f0 45%,
-    #00d0c0 75%,
-    #00e0b0 100%
-  );
-}
-
-/* ─────────────────────────────────────────────
+/* =========================================================
    HOPE LIGHT
-   ───────────────────────────────────────────── */
+   ========================================================= */
 
 @plugin "daisyui/theme" {
   name: "hope-light";
   default: true;
   color-scheme: light;
 
-  /* Surfaces */
+  /* =======================================================
+     Surfaces
+     ======================================================= */
+
   --color-base-100: #ffffff;
   --color-base-200: #f8fafc;
   --color-base-300: #e2e8f0;
   --color-base-content: #0f172a;
 
-  /* Brand */
+  /* =======================================================
+     Brand
+     ======================================================= */
+
+  /* Primary — Fast */
   --color-primary: #0060f0;
   --color-primary-content: #ffffff;
+  --color-primary-soft: #eaf2ff;
 
-  --color-secondary: #0090f0;
+  /* Secondary — Agile */
+  --color-secondary: #00bfa6;
   --color-secondary-content: #ffffff;
+  --color-secondary-soft: #e6faf6;
 
-  --color-accent: #00c8b8;
+  /* Accent — Technology / Energy */
+  --color-accent: #00d0c0;
   --color-accent-content: #042f2e;
+  --color-accent-soft: #e6fcf9;
 
-  /* Neutral */
+  /* =======================================================
+     Neutral
+     ======================================================= */
+
   --color-neutral: #0f172a;
   --color-neutral-content: #f8fafc;
 
-  /* Semantic */
-  --color-info: #0090f0;
-  --color-info-content: #ffffff;
+  /* =======================================================
+     Semantic
+     ======================================================= */
 
-  --color-success: #00a98f;
-  --color-success-content: #ffffff;
+  --color-info: #38bdf8;
+  --color-info-content: #082f49;
+
+  --color-success: #10b981;
+  --color-success-content: #022c22;
 
   --color-warning: #f59e0b;
   --color-warning-content: #422006;
@@ -85,55 +72,82 @@ body {
   --color-error: #ef4444;
   --color-error-content: #ffffff;
 
-  /* Shape */
+  /* =======================================================
+     Shape
+     ======================================================= */
+
   --radius-selector: 0.5rem;
   --radius-field: 0.625rem;
   --radius-box: 0.875rem;
 
-  /* Components */
+  /* =======================================================
+     Components
+     ======================================================= */
+
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
   --border: 1px;
 
-  /* Effects */
+  /* =======================================================
+     Effects
+     ======================================================= */
+
   --depth: 1;
   --noise: 0;
 }
 
-/* ─────────────────────────────────────────────
+/* =========================================================
    HOPE DARK
-   ───────────────────────────────────────────── */
+   ========================================================= */
 
 @plugin "daisyui/theme" {
   name: "dark";
   prefersdark: true;
   color-scheme: dark;
 
-  /* Surfaces */
+  /* =======================================================
+     Surfaces
+     ======================================================= */
+
   --color-base-100: #050b18;
   --color-base-200: #0b1220;
   --color-base-300: #111c30;
   --color-base-content: #f8fafc;
 
-  /* Brand */
+  /* =======================================================
+     Brand
+     ======================================================= */
+
+  /* Primary — Fast */
   --color-primary: #0090f0;
   --color-primary-content: #ffffff;
+  --color-primary-soft: #08244a;
 
-  --color-secondary: #00b8f0;
-  --color-secondary-content: #00111f;
+  /* Secondary — Agile */
+  --color-secondary: #00d0b0;
+  --color-secondary-content: #00251f;
+  --color-secondary-soft: #062b27;
 
+  /* Accent — Technology / Energy */
   --color-accent: #00d0c0;
   --color-accent-content: #001f1c;
+  --color-accent-soft: #062e2b;
 
-  /* Neutral */
+  /* =======================================================
+     Neutral
+     ======================================================= */
+
   --color-neutral: #172033;
   --color-neutral-content: #e2e8f0;
 
-  /* Semantic */
+  /* =======================================================
+     Semantic
+     ======================================================= */
+
   --color-info: #38bdf8;
   --color-info-content: #082f49;
 
-  --color-success: #00d0a0;
+  --color-success: #34d399;
   --color-success-content: #022c22;
 
   --color-warning: #fbbf24;
@@ -142,25 +156,40 @@ body {
   --color-error: #fb7185;
   --color-error-content: #4c0519;
 
-  /* Shape */
+  /* =======================================================
+     Shape
+     ======================================================= */
+
   --radius-selector: 0.5rem;
   --radius-field: 0.625rem;
   --radius-box: 0.875rem;
 
-  /* Components */
+  /* =======================================================
+     Components
+     ======================================================= */
+
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
   --border: 1px;
 
-  /* Effects */
+  /* =======================================================
+     Effects
+     ======================================================= */
+
   --depth: 1;
   --noise: 0;
 }
 
-/* ─────────────────────────────────────────────
-   GLOBAL
-   ───────────────────────────────────────────── */
+/* =========================================================
+   Global Design Tokens
+   ========================================================= */
 
-html {
-  scroll-behavior: smooth;
+html, body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Vazirmatn, Arial, sans-serif;
+
+  background: var(--color-base-300);
+  color: var(--color-base-content);
 }

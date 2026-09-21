@@ -1,0 +1,27 @@
+type App = {
+  title: string;
+  image: string;
+  desc: string;
+  link: string;
+};
+
+export const apps: Array<App> = [
+  {
+    title: "فرم لاگین باب‌اسفنجی",
+    image: "/images/spongebob-login-form/app.png",
+    desc: "فرم لاگین جالب و بامزه انیمیشنی که کاربر با چشمش متن کاربر را دنبال میکند و در زمان وارد کردن پسورد به منظور حفظ حریم خصوصی کاربر نگاهش را به بالا میبرد.",
+    link: "/spongebob-login-form",
+  },
+  {
+    title: "آب و هوا",
+    image: "/images/weather/app.png",
+    desc: "دریافت اطلاعات آب و هوا از جمله دما، میزان ابر و میزان بارش و اعلام وضعیت کلی هوا.",
+    link: "/weather",
+  },
+  {
+    title: "چک لیست",
+    image: "/images/check-list/app.png",
+    desc: "مدیریت کارها و اولویت بندی برپایه تئوری ماتریس آیزن هاور.",
+    link: "/check-list",
+  },
+];

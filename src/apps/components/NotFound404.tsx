@@ -23,7 +23,7 @@ function NotFound404() {
   return (
     <main
       dir="rtl"
-      className="h-[85vh] lg:h-[90vh] bg-base-300 flex items-center justify-center p-6"
+      className="h-screen bg-base-300 flex items-center justify-center p-6"
     >
       <div className="card bg-base-100 shadow-xl w-full max-w-lg">
         <div className="card-body items-center text-center py-12">

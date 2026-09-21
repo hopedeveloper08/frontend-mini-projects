@@ -1,33 +1,25 @@
-function initializeTheme(): void {
+function themeInitialization(): void {
   const html = document.documentElement;
   const savedTheme = localStorage.theme;
 
   const theme =
-    savedTheme === "dark" || savedTheme === "hope-light"
+    savedTheme === "dark" || savedTheme === "custom-light"
       ? savedTheme
       : window.matchMedia("(prefers-color-scheme: dark)").matches
         ? "dark"
-        : "hope-light";
+        : "custom-light";
 
-  // Tailwind
   html.classList.toggle("dark", theme === "dark");
-
-  // daisyUI
   html.setAttribute("data-theme", theme);
 }
 
 function themeChange(dark: boolean): void {
-  const theme = dark ? "dark" : "hope-light";
+  const theme = dark ? "dark" : "custom-light";
   const html = document.documentElement;
 
-  // ذخیره انتخاب کاربر
   localStorage.theme = theme;
-
-  // Tailwind
   html.classList.toggle("dark", dark);
-
-  // daisyUI
   html.setAttribute("data-theme", theme);
 }
 
-export { initializeTheme, themeChange };
+export { themeInitialization, themeChange };
