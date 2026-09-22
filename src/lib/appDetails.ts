@@ -30,4 +30,16 @@ export const apps: Array<App> = [
     desc: "نویگیشن ریسپانسیو مناسب وب و موبایل با قابلیت شخصی سازی",
     link: "/responsive-navbar",
   },
+  {
+    title: "نویگیشن فروشگاهی",
+    image: "/images/store-navigation/app.jpg",
+    desc: "نویگیشن فروشگاهی ریسپانسیو با سبد خرید",
+    link: "/store-navigation",
+  },
+  {
+    title: "هدر مدرن",
+    image: "/images/modern-header/app.jpg",
+    desc: "هدر مدرن برای اولین برخورد کاربران سایت",
+    link: "/modern-header",
+  },
 ];

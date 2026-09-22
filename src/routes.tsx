@@ -6,6 +6,8 @@ import Weather from "./apps/weather/Weather";
 import ToDo from "./apps/to-do/ToDo";
 import NotFound404 from "./apps/components/NotFound404";
 import ResponsiveNavbar from "./apps/responsive-navbar/page";
+import ModernHeader from "./apps/modern-header/page";
+import StoreNavigation from "./apps/store-navigation-with-cart/page";
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +33,14 @@ export const router = createBrowserRouter([
       {
         path: "responsive-navbar",
         Component: ResponsiveNavbar,
+      },
+      {
+        path: "store-navigation",
+        Component: StoreNavigation,
+      },
+      {
+        path: "modern-header",
+        Component: ModernHeader,
       },
     ],
     ErrorBoundary: NotFound404,
