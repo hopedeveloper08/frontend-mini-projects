@@ -9,7 +9,7 @@ export const apps: Array<App> = [
   {
     title: "فرم لاگین باب‌اسفنجی",
     image: "/images/spongebob-login-form/app.png",
-    desc: "فرم لاگین جالب و بامزه انیمیشنی که کاربر با چشمش متن کاربر را دنبال میکند و در زمان وارد کردن پسورد به منظور حفظ حریم خصوصی کاربر نگاهش را به بالا میبرد.",
+    desc: "فرم لاگین جالب و بامزه انیمیشنی که با چشمش متن کاربر را دنبال میکند و در زمان وارد کردن پسورد به منظور حفظ حریم خصوصی کاربر نگاهش را به بالا میبرد.",
     link: "/spongebob-login-form",
   },
   {
@@ -20,8 +20,14 @@ export const apps: Array<App> = [
   },
   {
     title: "چک لیست",
-    image: "/images/check-list/app.png",
+    image: "/images/check-list/app.jpg",
     desc: "مدیریت کارها و اولویت بندی برپایه تئوری ماتریس آیزن هاور.",
     link: "/check-list",
+  },
+  {
+    title: "نویگیشن ریسپانسیو",
+    image: "/images/responsive-navbar/app.jpg",
+    desc: "نویگیشن ریسپانسیو مناسب وب و موبایل با قابلیت شخصی سازی",
+    link: "/responsive-navbar",
   },
 ];

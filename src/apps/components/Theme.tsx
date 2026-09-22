@@ -11,7 +11,7 @@ export default function Theme() {
   }, []);
 
   return (
-    <div className="fixed top-15 left-3 btn btn-circle z-50">
+    <div className="fixed bottom-15 left-3 btn btn-circle btn-ghost z-50">
       <label className="swap swap-rotate p-3 rounded-full">
         <input
           ref={themeToggleRef}

@@ -79,8 +79,8 @@ function ToDo() {
   }
 
   return (
-    <main className="w-full lg:w-[100vh] h-[85vh] lg:h-[90vh] p-5 lg:p-10 overflow-hidden mx-auto">
-      <div className="card bg-base-100 w-full h-full shadow-sm mx-auto">
+    <main className="container mx-auto p-8">
+      <div className="card bg-base-100 w-full h-[90vh] shadow-sm mx-auto">
         <div className="card-body flex flex-col min-h-0">
           <AddTaskForm onAdd={addTask} />
 
@@ -92,7 +92,7 @@ function ToDo() {
           />
 
           {/* Task area */}
-          <div className="flex-1 min-h-0">
+          <div className="flex-1 h-full overflow-y-hidden">
             <Task
               tasks={tasks}
               onDelete={removeTask}

@@ -5,6 +5,7 @@ import SpongebobLoginForm from "./apps/spongebob-login-form/SpongebobLoginForm";
 import Weather from "./apps/weather/Weather";
 import ToDo from "./apps/to-do/ToDo";
 import NotFound404 from "./apps/components/NotFound404";
+import ResponsiveNavbar from "./apps/responsive-navbar/page";
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
       {
         path: "check-list",
         Component: ToDo,
+      },
+      {
+        path: "responsive-navbar",
+        Component: ResponsiveNavbar,
       },
     ],
     ErrorBoundary: NotFound404,

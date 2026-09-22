@@ -38,7 +38,7 @@ function Task({ tasks, onDelete, onCheck, justImportant, justUrgent }: TaskProps
               />
             </div>
             <div className="flex flex-col justify-center items-start">
-              <div className="relative">{task.check && <div className="absolute w-full h-px top-[50%] bg-primary"></div>}{task.title}</div>
+              <div className="relative text-base lg:text-xl">{task.check && <div className="absolute w-full h-px top-[50%] bg-primary"></div>}{task.title}</div>
               {(task.important || task.urgent) && (
                 <>
                   <div className="text-xs uppercase font-semibold flex gap-2 pt-1">

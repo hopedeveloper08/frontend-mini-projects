@@ -12,7 +12,7 @@ function App() {
   }, []);
 
   return (
-    <main className="w-screen min-h-screen">
+    <main className="w-screen min-h-[90vh]">
       <Theme />
       <BackToHome />
       <Outlet />

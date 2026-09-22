@@ -50,7 +50,7 @@ function AddTaskForm({ onAdd }: AddTaskFormProps) {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <button type="submit" className="btn btn-secondary join-item">
+        <button type="submit" className="btn btn-primary join-item">
           اضافه کردن
         </button>
       </form>

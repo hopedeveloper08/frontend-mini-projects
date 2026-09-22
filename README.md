@@ -10,18 +10,19 @@
 
 ### تکنولوژی‌ها و ابزارهای مورد استفاده
 
-* **HTML, CSS**
-* **Tailwind CSS**
-* **TypeScript**
-* **React.js**
+- **HTML, CSS**
+- **Tailwind CSS**
+- **TypeScript**
+- **React.js**
 
 هر یک از مینی‌پروژه‌ها با هدف پیاده‌سازی یک قابلیت، سناریو یا رابط کاربری مشخص توسعه داده شده و در مجموع، مجموعه‌ای از نمونه‌کارهای عملی در حوزه‌ی توسعه‌ی فرانت‌اند را تشکیل می‌دهند.
 
-
 # لیست پروژه ها
+
 [فرم لاگین باب اسفنجی](#فرم-لاگین-باب-اسفنجی)
 [اپلیکیشن آب و هوا](#اپلیکیشن-آب-و-هوا)
-[مدیریت کار ها](#مدیریت_کارها)
+[چک لیست](#چک_لیست)
+[نویگیشن ریسپانسیو](#نویگیشن_ریسپانسیو)
 
 # فرم لاگین باب اسفنجی
 
@@ -33,20 +34,7 @@
 
 > ایده و طراحی اولیه این پروژه با الهام از دوره «پروژه‌های خلاقانه با JavaScript» مجموعه سبزلرن توسعه داده شده و پیاده‌سازی و توسعه آن در این مجموعه انجام شده است.
 
-![spongebob-login-form](./project-images/spongebob-login-form/main.png)
-*صفحه لاگین*
-
-![spongebob-login-form](./project-images/spongebob-login-form/password.png)
-*زمانی که درحال وارد کردن پسورد باشد*
-
-![spongebob-login-form](./project-images/spongebob-login-form/username.png)
-*زمانی که درحال وارد کردن نام کاربری باشد*
-
-![spongebob-login-form](./project-images/spongebob-login-form/type.png)
-*زمانی که درحال وارد کردن نام کاربری باشد*
-
-![spongebob-login-form](./project-images/spongebob-login-form/type2.png)
-*زمانی که درحال وارد کردن نام کاربری باشد*
+![spongebob-login-form](./public/images/spongebob-login-form/app.png)
 
 # اپلیکیشن آب و هوا
 
@@ -56,19 +44,23 @@
 
 ### اطلاعات قابل نمایش
 
-* دمای فعلی هوا
-* میزان پوشش ابر
-* میزان بارندگی
-* وضعیت کلی آب‌وهوا
-* نمایش وضعیت آب‌وهوا به‌صورت پویا و متناسب با شرایط فعلی
+- دمای فعلی هوا
+- میزان پوشش ابر
+- میزان بارندگی
+- وضعیت کلی آب‌وهوا
+- نمایش وضعیت آب‌وهوا به‌صورت پویا و متناسب با شرایط فعلی
 
 این پروژه با تمرکز بر **دریافت و پردازش داده‌های آب‌وهوا، کار با API، مدیریت داده‌ها و به‌روزرسانی پویا‌ی رابط کاربری** توسعه داده شده است.
 برای دریافت اطلاعات آب و هوا از سرویس Open-Meteo استفاده شده است.
 
-![weather](./project-images/weather/1.png)
-![weather](./project-images/weather/2.png)
-![weather](./project-images/weather/3.jpg)
+![weather](./public/images/weather/app.png)
 
-# مدیریت کار ها
+# چک لیست
+
+![weather](./public/images/check-list/app.jpg)
+
+# نویگیشن ریسپانسیو
+
+![weather](./public/images/responsive-navbar/app.jpg)
 
 </div>
